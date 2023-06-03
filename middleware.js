@@ -10,7 +10,7 @@ export default async function () {
     httpOnly: false
   })
 
-  // res.headers.append('set-cookie', newSessionStr)
+  res.headers.append('set-cookie', newSessionStr)
   res.headers.append('cookie', newSessionStr)
 
   return res
